@@ -1,0 +1,275 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(243, 215, 215);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    /* Change the position property to fixed, and top property to 0 */
+    
+   /* Change the z-index property to 10 */
+    z-index: 10;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 2px 20px;
+}
+
+#logo img{
+    height: 50px;
+    margin: 2px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+#navbar h1 {
+    font-family: 'Baloo Bhai', cursive;
+    color:wheat;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 450px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 250px;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('Foodimages.jpg') no-repeat center center/cover;
+    height: 830px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+.logomain {
+    height:200px;
+    margin-top: 120px;
+    
+
+}
+
+#home h1{
+    margin-top: 10px;
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 5px 5px #0a0a0a;
+    font-size: 4rem;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Bree Serif', serif;
+    text-shadow: 3px 3px #0a0a0a;
+    margin: 10px;
+}
+/* Services Section */
+#services-container {
+    margin-top: 200px;
+    width: 100%;}
+
+#services-container h1{
+    margin-top:150px;
+}
+#services{
+    padding-top: 25px;
+    margin: 25px;
+    display: flex;
+}
+
+#services .box{ 
+    border: 2px solid rgb(253, 253, 253);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #ffd1c9;
+    margin-bottom: 20px;
+    width: 33.3%;
+
+}
+.cod {
+    height: 200px;
+}
+#services .box img{ 
+   height: 200px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+    margin: 100px;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('foodfront.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: rgb(36, 35, 35);
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 4rem;
+    padding: 12px;
+    color: rgb(241, 119, 119)
+    
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3rem;
+    color: rgb(46, 43, 43);
+    padding: 20px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgb(250, 214, 9);
+    color: rgb(15, 15, 15);
+    margin: 17px;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
