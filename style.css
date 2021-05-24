@@ -1,7 +1,10 @@
 /* CSS Reset */
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    display:block;
+    box-sizing: border-box;
+    
 }
 
 body{
